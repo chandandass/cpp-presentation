@@ -12,12 +12,17 @@ class Vehicle
 
 class Car : public Vehicle
 {
-    
+    public: 
+    void info()
+    { 
+        cout<<"car is a ";
+        show();
+    }
 };
 
 int main()
 {
    Car obj;
-   obj.show();
+   obj.info();
     return 0;
 }
