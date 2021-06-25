@@ -12,7 +12,7 @@ class Vehicle
 class Car : private Vehicle
 {   
     public:
-    void call()
+    void info()
     {
         cout<<"Car is a ";
         show();                              
@@ -21,7 +21,7 @@ class Car : private Vehicle
 class Bus : private Vehicle
 {    
    public:
-   void call()
+   void info()
    {
        cout<<"Bus is a ";
        show();
@@ -32,8 +32,8 @@ int main()
 {
     Car nano;
     Bus volvo;
-    nano.call();
-    volvo.call();
+    nano.info();
+    volvo.info();
 
     return 0;
 }

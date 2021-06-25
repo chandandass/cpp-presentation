@@ -9,20 +9,21 @@ public:
     }
 };
 
-class car : protected Vehicle
+class car : private Vehicle
 {
 public:
     int gear;
-    car() : gear(1) {}
+    car() : gear(1) {
+        show();
+    }
 };
+
 class nano : private car
 {
 public:
     void Gear(int i = 1)
     {
-        show();
-
-        cout << "gear : " << ((i < 4) ? gear = i : gear) << endl;
+           cout << "gear : " << ((i < 4) ? gear = i : gear) << endl;
     }
 };
 int main()

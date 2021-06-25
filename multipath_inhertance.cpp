@@ -10,7 +10,7 @@ class Vehicle
     }
 };
 
-class SportCar : public Vehicle
+class SportCar : virtual public Vehicle
 {
    public:
    void s_car()
@@ -18,7 +18,7 @@ class SportCar : public Vehicle
        cout<<"Sport car";
    }
 };
-class NormalCar : public Vehicle
+class NormalCar : virtual public Vehicle
 {
    public:
    void n_car()
@@ -32,7 +32,7 @@ class Toyota : private SportCar , private NormalCar
   public:
   void info()
   {
-      SportCar::show();
+      show();
       cout<<"Toyota is a combination of ";
       s_car();
       cout<<" and ";

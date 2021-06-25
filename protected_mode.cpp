@@ -29,6 +29,6 @@ int main()
     B b;
     C c;
    // b.show();
-   c.call();
+  // c.call();
     return 0;
 }
