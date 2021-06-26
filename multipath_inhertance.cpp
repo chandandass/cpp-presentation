@@ -15,7 +15,7 @@ class SportCar : virtual public Vehicle
    public:
    void s_car()
    {
-       cout<<"Sport car";
+       cout<<"Sports car";
    }
 };
 class NormalCar : virtual public Vehicle
