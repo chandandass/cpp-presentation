@@ -10,7 +10,8 @@ class A
    {  cout<<"class A";}
 };
 class B : private A
-{
+{  private:
+
     public:
    void call()
    {
